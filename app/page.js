@@ -45,7 +45,7 @@ export default function Home() {
       />
       <br className="max-md:hidden"/>
       {isLoading && <Spinner thickness='1px' speed='0.65s' emptyColor='gray.200' color='blue.500' size='xl'/>}
-      {userName.length !== 0?(<GitUser users={users}/>): null}
+      {userName?(<GitUser users={users}/>): null}
     </section>
   )
 }
